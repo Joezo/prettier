@@ -100,3 +100,9 @@ else {
 
 // The comment makes the line break in a weird way
 const result = asyncExecute('non_existing_command', /* args */ []);
+
+function returnSomething() {
+  return ( // this comment stops this from returning 'a string'
+    'a string'
+  )
+}
